@@ -60,6 +60,7 @@ const Flowchart = React.forwardRef((props: {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       mermaid.initialize({
+        securityLevel: 'sandbox',
         startOnLoad: true,
         theme: 'neutral',
         look,
